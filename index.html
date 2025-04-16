@@ -1,497 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Jose Cruz</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
-    <link rel="icon" href="./img/jc-new-age.png">
-
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Francisco Cruz Corro - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://minio.gesco.ec/software-total/images/logo-redondo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .smoke-canvas { z-index: 10; }
+    .smoke-container img { z-index: 20; position: relative; }
+  </style>
 </head>
-<body>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper teal darken-4">
-                <a href="#" class="brand-logo">
-                    <img src="./img/jc-new-age.png" height="60" alt="">
-                </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#sobremi">Sobre mi</a></li>
-                </ul>
-            </div>
-        </nav>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Hero -->
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://picsum.photos/1200/800?random=1')">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center px-4">
+        <img src="https://minio.gesco.ec/software-total/images/logo-redondo.png" alt="Logo Software Total" class="w-32 h-32 mb-4 animate-pulse">
+        <h1 class="text-5xl font-bold text-white mb-4">Jose Francisco Cruz Corro</h1>
+        <p class="text-xl text-gray-200 mb-6">Desarrollador de Software | DevOps | Servidores | IA & Big Data</p>
+        <p class="text-md text-gray-300 italic mb-8">Autodidacta • Emprendedor • Apasionado de la Tecnología</p>
+        <div class="flex space-x-4">
+          <a href="https://wa.me/593995391318" class="text-white text-2xl hover:text-green-400 transition"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://t.me/SoftwareTotal" class="text-white text-2xl hover:text-blue-400 transition"><i class="fab fa-telegram"></i></a>
+          <a href="mailto:info@software-total.com" class="text-white text-2xl hover:text-red-400 transition"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.software-total.com" class="text-white text-2xl hover:text-yellow-400 transition"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+    </section>
+
+  <!-- Sobre Mi -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Sobre Mí</h2>
+      <div class="max-w-3xl mx-auto text-lg text-gray-700 space-y-4">
+        <p>Soy desarrollador de software nacido en 1994 en Quito, Ecuador, con más de 10 años de experiencia, especializado en arquitecturas robustas, automatización de procesos y soluciones de inteligencia artificial y big data.</p>
+        <p>He implementado infraestructuras DevOps en la nube, gestionado servidores de misión crítica y optimizado pipelines CI/CD para acelerar la entrega de software.</p>
+        <p>Mi enfoque autodidacta y emprendedor me impulsa a aprender continuamente nuevas tecnologías y aplicar prácticas innovadoras para resolver retos complejos.</p>
+      </div>
     </div>
+  </section>
 
-    <img width="100%" src="./img/njcban.png">
-
-    <div class="container">
-        
-        <div class="row" id="servicios">
-            <div class="col s12">
-                <center>
-                    <h2>
-                        <strong>
-                            ¿Qué servicios te ofresco?
-                        </strong>
-                    </h2>
-                </center>
-            </div>
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Desarrollo de aplicaciones</span>
-                        <p>
-                            Desarrollo su aplicación desde $500, el precio varía dependiendo de la aplicación,
-                            la tecnología a usar, las horas invertidas, entre otros.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://wa.me/593995391318?text=Buen día, me gustaría que me ayude con mi aplicación">
-                            Contáctame
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Desarrollo de aplicaciones Web</span>
-                        <p>
-                            Desarrollo su aplicación WEB desde $100, el precio varía dependiendo de la aplicación,
-                            la tecnología a usar, las horas invertidas, entre otros.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://wa.me/593995391318?text=Buen día, me gustaría que me ayude con mi aplicación WEB">
-                            Contáctame
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Despliegue y mantenimiento de servidores</span>
-                        <p>
-                            Asesoría y/o ayuda para desplegar su servidor WEB sea Cloud (Google Cloud Platform o AWS),
-                            VPS o Máquina virtual en servidor dedicado con LINUX distribuciones basadas en <strong>
-                                DEBIAN
-                            </strong>(Ejm: Ubuntu), Instalacion de sistemas de gestion de servidores WHM - CPanel o
-                            VestaCP, Instalación de Certificados SSL para su servidor dedicado o vps.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://wa.me/593995391318?text=Buen día, me gustaría que me ayude con servidor">
-                            Contáctame
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Tutoría personalizada en linea</span>
-                        <p>
-                            Recibe clases en linea con migo y aprende, desde <strong>
-                                $8.00 USD/por hora
-                            </strong>:
-                            <ul>
-                                <li>
-                                    Programación
-                                </li>
-                                <li>
-                                    Uso de Frameworks Laravel, VueJS, ExpressJS
-                                </li>
-                                <li>
-                                    Matemática a todo nivel hasta Cálculo Integral
-                                </li>
-                                <li>
-                                    Física
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://wa.me/593995391318?text=Buen día, me gustaría que contratarlo como tutor">
-                            Contáctame
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
+  <!-- Servicios -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Servicios</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Tarjetas de servicios -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <div class="text-5xl text-indigo-500 mb-4 text-center"><i class="fas fa-code"></i></div>
+          <h3 class="text-2xl font-semibold mb-2 text-center">Desarrollo de Software</h3>
+          <p class="text-gray-600 text-center">Aplicaciones web y móviles a medida usando Angular, React, Django, Flask y más.</p>
         </div>
-
-        <hr>
-
-        <div class="row" id="experiencia">
-            <div class="col s12">
-                <center>
-                    <h2>
-                        <strong>
-                            Experiencia
-                        </strong>
-                    </h2>
-                </center>
-            </div>
-            <div class="col s12 m6">
-                <div class="card indigo darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Backend</span>
-                        <p>
-                            Programador Backend
-                            <ol>
-                                <li>                        
-                                    PHP - Laravel
-                                </li>
-                                <li>
-                                    PHP - Symfony
-                                </li>
-                                <li>
-                                    Python - Django
-                                </li>
-                                <li>
-                                    Google Function
-                                </li>
-                                <li>
-                                    Javascript - NodeJS - ExpressJS
-                                </li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card indigo darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Frontend</span>
-                        <p>
-                            Programador Frontend
-                            <ol>
-                                <li>
-                                    Javascript puro
-                                </li>
-                                <li>
-                                    VueJS
-                                </li>
-                                <li>
-                                    ReactJS
-                                </li>
-                                <li>
-                                    CSS puro
-                                </li>
-                                <li>
-                                    CSS - Bootstrap
-                                </li>
-                                <li>
-                                    CSS - MaterializeCSS
-                                </li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card indigo darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Servidores</span>
-                        <p>
-                            Manejo de servidores
-                            <ol>
-                                <li>
-                                    Cloud - Google Cloud Platform
-                                </li>
-                                <li>
-                                    Cloud - AWS
-                                </li>
-                                <li>
-                                    Dedicado con distribuciones Linux basadas en DEBIAN
-                                </li>
-                                <li>
-                                    Compartido - WHM-Cpanel o VestaCP incluyendo como instalarlos
-                                </li>
-                                <li>
-                                    Servidores DNS
-                                </li>
-                                <li>
-                                    Certificados SSL
-                                </li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card indigo darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Desarrollo de aplicaciones</span>
-                        <p>
-                            <strong>
-                                NOTA:
-                            </strong>
-                            al decir aplicaciones no me refiero exclusivamente a aplicaciones Android/IOS, sino tambien a 
-                            aplicaciones de escritorio y aplicaciones para microcontroladores
-                            <ol>
-                                <li>
-                                    Kotlin
-                                </li>
-                                <li>
-                                    Flutter
-                                </li>
-                                <li>
-                                    Java
-                                </li>
-                                <li>
-                                    C++
-                                </li>
-                                <li>
-                                    Arduino
-                                </li>
-                                <li>
-                                    RaspBerry
-                                </li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card indigo darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Bases de datos</span>
-                        <p>
-                            Manejo y optimización de bases de datos
-                            <ol>
-                                <li>
-                                    SQL - MySQL
-                                </li>
-                                <li>
-                                    SQL - PostgreSQL
-                                </li>
-                                <li>
-                                    SQL - SQLite
-                                </li>
-                                <li>
-                                    No relacionales - MongoDB
-                                </li>
-                                <li>
-                                    No relacionales - Firebase
-                                </li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card indigo darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Desarrollo de videojuegos</span>
-                        <p>
-                            Manejo de los siguientes softwares para la creación de videojuegos
-                            <ol>
-                                <li>
-                                    Unity 3d
-                                </li>
-                                <li>
-                                    GameMaker
-                                </li>
-                                <li>
-                                    RPG Maker
-                                </li>
-                                <li>
-                                    C++ puro con libreria Allegro
-                                </li>
-                                <li>
-                                    Java puro
-                                </li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12">
-                <div class="card indigo darken-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Tutoría y asesoría</span>
-                        <p>
-                            Me resulta facil y fluido enseñarles o asesorar a otros cualquier tema relacionado a desarrollo 
-                            referente a mi las tecnologías ya mencionadas antes. Ademas imparto clases privadas de 
-                            matemática a cualquien nivel 
-                            hasta bachillerato o hasta cálculo integral. Tambien imparto clases privadas de Física.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <div class="text-5xl text-green-500 mb-4 text-center"><i class="fas fa-cogs"></i></div>
+          <h3 class="text-2xl font-semibold mb-2 text-center">DevOps & CI/CD</h3>
+          <p class="text-gray-600 text-center">Automatización de pipelines, integración continua y despliegue continuo en Kubernetes y Docker.</p>
         </div>
-
-
-        <hr>
-
-        <div class="row" id="sobremi">
-            <div class="col s12">
-                <center>
-                    <h2>
-                        <strong>
-                            ¿Quien soy?
-                        </strong>
-                    </h2>
-                </center>
-            </div>
-            <div class="col s12">
-                <div class="card teal darken-4">
-                    <div class="card-content white-text">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Nombre:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            JOSÉ FRANCISCO CRUZ CORRO
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Formación:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            Educación Universitaria(Sin terminar)
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Inicio de actividades como programador profecional:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            Noviembre de 2017
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Experto en:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            Desarrollo WEB
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Socio en:
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                Cronleads 
-                                            </li>
-                                            <li>
-                                                Cissetaxes
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Fecha de nacimiento:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            17 de mayo de 1994
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Nacionalida:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            Ecuador
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Recidencia:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            QUITO
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        RUC:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            1723413504001
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Emails:
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                <strong>
-                                                    cruzespejose@gmail.com
-                                                </strong>
-                                            </li>
-                                            <li>
-                                                <strong>
-                                                    josefranciscocruzcorro@gmail.com
-                                                </strong>
-                                            </li>
-                                            <li>
-                                                <strong>
-                                                    jfccdesarrollador@gmail.com
-                                                </strong>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        WhatsApp:
-                                    </td>
-                                    <td>
-                                        <strong>
-                                            (593) 995391318
-                                        </strong>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <div class="text-5xl text-blue-500 mb-4 text-center"><i class="fas fa-server"></i></div>
+          <h3 class="text-2xl font-semibold mb-2 text-center">Gestión de Servidores</h3>
+          <p class="text-gray-600 text-center">Administración de servidores Linux/Windows, configuración de redes y seguridad empresarial.</p>
         </div>
-
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <div class="text-5xl text-yellow-500 mb-4 text-center"><i class="fas fa-robot"></i></div>
+          <h3 class="text-2xl font-semibold mb-2 text-center">Inteligencia Artificial</h3>
+          <p class="text-gray-600 text-center">Implementación de modelos de machine learning y deep learning para análisis de datos y automatización.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <div class="text-5xl text-purple-500 mb-4 text-center"><i class="fas fa-database"></i></div>
+          <h3 class="text-2xl font-semibold mb-2 text-center">Big Data</h3>
+          <p class="text-gray-600 text-center">Procesamiento y análisis de grandes volúmenes de datos con Spark, Hadoop y Python.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+          <div class="text-5xl text-red-500 mb-4 text-center"><i class="fas fa-cloud"></i></div>
+          <h3 class="text-2xl font-semibold mb-2 text-center">Cloud & Infraestructura</h3>
+          <p class="text-gray-600 text-center">Despliegue en AWS, GCP y Azure, diseño de arquitecturas escalables y seguras.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <script>
-        M.AutoInit();
-    </script>
+  <!-- Clientes Destacados -->
+  <section id="clients" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Clientes Destacados</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="relative smoke-container">
+          <canvas class="smoke-canvas absolute inset-0"></canvas>
+          <img src="https://logo.clearbit.com/globonetsoluciones.com" alt="Globonet Soluciones" class="mx-auto h-24 object-contain" onload="this.previousElementSibling.style.display='none'">
+        </div>
+        <div class="relative smoke-container">
+          <canvas class="smoke-canvas absolute inset-0"></canvas>
+          <img src="https://logo.clearbit.com/telconet.net" alt="Telconet Latam" class="mx-auto h-24 object-contain" onload="this.previousElementSibling.style.display='none'">
+        </div>
+        <div class="relative smoke-container">
+          <canvas class="smoke-canvas absolute inset-0"></canvas>
+          <img src="https://logo.clearbit.com/fibramax.ec" alt="Fibramax" class="mx-auto h-24 object-contain" onload="this.previousElementSibling.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8">Contacto</h2>
+      <p class="text-lg text-gray-700 mb-6">Estoy disponible para nuevos proyectos y colaboraciones. ¡Hablemos!</p>
+      <div class="flex justify-center space-x-6 mb-8">
+        <a href="https://wa.me/593995391318" class="text-green-500 text-3xl hover:text-green-600 transition"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@software-total.com" class="text-red-500 text-3xl hover:text-red-600 transition"><i class="fas fa-envelope"></i></a>
+        <a href="https://t.me/SoftwareTotal" class="text-blue-400 text-3xl hover:text-blue-500 transition"><i class="fab fa-telegram"></i></a>
+      </div>
+      <p class="text-gray-600">Email: <a href="mailto:info@software-total.com" class="text-indigo-600 hover:underline">info@software-total.com</a></p>
+      <p class="text-gray-600">Web: <a href="https://www.software-total.com" class="text-indigo-600 hover:underline">www.software-total.com</a></p>
+      <p class="text-gray-600">Ubicación: Quito, Ecuador</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-800 text-gray-300">
+    <div class="container mx-auto px-4 text-center">
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="https://www.facebook.com/profile.php?id=61574821014389" class="hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/software2025total?igsh=MWoxN2hseDVhaHQ3bw==" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/software2025t" class="hover:text-white transition"><i class="fab fa-twitter"></i></a>
+        <a href="https://tiktok.com/@softwaretotal2025" class="hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/@SoftwareTotal2025" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>&copy; 2025 Jose Francisco Cruz Corro. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Smoke Animation Script -->
+  <script>
+    function createSmoke(canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      function init() {
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+        for (let i = 0; i < 40; i++) {
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: canvas.height,
+            r: 20 + Math.random() * 30,
+            a: 0.05 + Math.random() * 0.1,
+            ySpeed: 0.5 + Math.random()
+          });
+        }
+      }
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          const grd = ctx.createRadialGradient(p.x, p.y, p.r * 0.1, p.x, p.y, p.r);
+          grd.addColorStop(0, `rgba(200,200,200,${p.a})`);
+          grd.addColorStop(1, 'rgba(200,200,200,0)');
+          ctx.fillStyle = grd;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI);
+          ctx.fill();
+          p.y -= p.ySpeed;
+          p.a -= 0.001;
+          if (p.a <= 0) {
+            p.x = Math.random() * canvas.width;
+            p.y = canvas.height;
+            p.r = 20 + Math.random() * 30;
+            p.a = 0.05 + Math.random() * 0.1;
+            p.ySpeed = 0.5 + Math.random();
+          }
+        });
+        requestAnimationFrame(animate);
+      }
+      init();
+      animate();
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.smoke-canvas').forEach(c => createSmoke(c));
+    });
+  </script>
 </body>
 </html>
