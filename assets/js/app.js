@@ -329,13 +329,13 @@
     { t: 'El pacto — cómo trabajo', g: 'g-pacto', a: '#pacto', k: 'condiciones tarifa contratar freelance precio' },
     { t: 'La señal — contacto', g: 'g-senal', a: '#senal', k: 'contacto hablar escribir email correo' },
     { t: 'Escribirme por WhatsApp', g: 'g-wsp', a: 'https://wa.me/593995391318', k: 'whatsapp telefono celular 0995391318', ext: true },
-    { t: 'Enviarme un correo', g: 'g-mail', a: 'mailto:info@software-total.com', k: 'email correo mail', ext: true },
+    { t: 'Enviarme un correo', g: 'g-mail', a: 'mailto:jcruz@software-total.com', k: 'email correo mail', ext: true },
     { t: 'Visitar Software Total', g: 'g-web', a: 'https://software-total.com', k: 'cronleads empresa software total', ext: true },
     { t: 'Copiar mi número', g: 'g-wsp', f: function () {
         copiar('+593995391318', 'Número copiado: +593 99 539 1318');
       }, k: 'copiar telefono numero' },
     { t: 'Copiar mi correo', g: 'g-mail', f: function () {
-        copiar('info@software-total.com', 'Correo copiado: info@software-total.com');
+        copiar('jcruz@software-total.com', 'Correo copiado: jcruz@software-total.com');
       }, k: 'copiar email correo' },
     { t: 'Encender / apagar el sonido', g: 'g-claro', f: alternarSonido, k: 'sonido audio musica ambiente viento' },
     { t: 'Encender / apagar la linterna', g: 'g-claro', f: alternarLinterna, k: 'linterna luz oscuridad' },

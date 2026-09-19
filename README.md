@@ -66,7 +66,7 @@ y limita el DPR a 2.
 
 ## Desarrollo
 
-No hay nada que compilar. Basta con servir la carpeta
+No hay nada que compilar. Basta con servir la carpeta:.
 
 ## Créditos
 
