@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Te perdiste en el bosque — Jose Francisco Cruz Corro</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#060b09">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Inter:wght@300;400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/bosque.css">
+<style>
+  .perdido{
+    position:relative;z-index:5;
+    min-height:100svh;display:grid;place-items:center;
+    padding:var(--gutter);text-align:center;
+  }
+  .perdido__in{max-width:620px}
+  .perdido__num{
+    font-family:var(--serif);
+    font-size:clamp(4.4rem,15vw,8.4rem);
+    font-weight:300;line-height:.9;
+    color:transparent;
+    background:linear-gradient(100deg,var(--hueso) 10%,var(--ambar) 50%,var(--jade) 92%);
+    -webkit-background-clip:text;background-clip:text;
+    margin:0 0 .1em;
+  }
+  .perdido h1{
+    font-family:var(--serif);font-weight:300;
+    font-size:clamp(1.6rem,5vw,2.6rem);
+    color:var(--hueso);margin-bottom:.5em;
+  }
+  .perdido p{color:var(--tinta-baja);max-width:44ch;margin:0 auto 1.3em}
+  .perdido em{font-family:var(--serif);font-style:italic;color:var(--jade)}
+</style>
+</head>
+<body>
+<canvas id="bosque" aria-hidden="true"></canvas>
+<div class="atmosfera" aria-hidden="true"></div>
+<div class="grano" aria-hidden="true"></div>
+
+<main class="perdido">
+  <div class="perdido__in">
+    <p class="perdido__num">404</p>
+    <h1>Te perdiste en el bosque</h1>
+    <p>Este sendero no lleva a ninguna parte. Pasa: la niebla se cierra rápido por aquí.</p>
+    <p><em>«Quien se pierde en el bosque encuentra árboles que nadie había visto.»</em></p>
+    <p style="margin-top:2.2em;margin-bottom:0">
+      <a class="btn btn--savia" href="/">Volver al umbral</a>
+    </p>
+  </div>
+</main>
+
+<script src="/assets/js/bosque.js" defer></script>
+</body>
+</html>

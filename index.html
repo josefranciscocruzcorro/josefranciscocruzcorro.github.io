@@ -1,184 +1,528 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jose Francisco Cruz Corro - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="https://minio.gesco.ec/software-total/images/logo-redondo.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .smoke-canvas { z-index: 10; }
-    .smoke-container img { z-index: 20; position: relative; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jose Francisco Cruz Corro — Arquitecto de software, DevOps e IA</title>
+
+<meta name="description" content="Jose Francisco Cruz Corro. Desarrollador autodidacta de Quito, Ecuador. Backend, DevOps, IA aplicada, IoT y ciberseguridad. Más de una década construyendo sistemas de extremo a extremo.">
+<meta name="author" content="Jose Francisco Cruz Corro">
+<meta name="theme-color" content="#060b09">
+<link rel="canonical" href="https://josefranciscocruzcorro.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_EC">
+<meta property="og:site_name" content="Jose Francisco Cruz Corro">
+<meta property="og:title" content="Jose Francisco Cruz Corro — Arquitecto de software, DevOps e IA">
+<meta property="og:description" content="Un bosque profundo de sistemas: backend, infraestructura, IA aplicada, IoT y ciberseguridad. Quito, Ecuador.">
+<meta property="og:url" content="https://josefranciscocruzcorro.github.io/">
+<meta property="og:image" content="https://josefranciscocruzcorro.github.io/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jose Francisco Cruz Corro — Arquitecto de software, DevOps e IA">
+<meta name="twitter:description" content="Un bosque profundo de sistemas: backend, infraestructura, IA aplicada, IoT y ciberseguridad.">
+<meta name="twitter:image" content="https://josefranciscocruzcorro.github.io/assets/img/og-image.png">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/emblema-192.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/emblema.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bosque.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jose Francisco Cruz Corro",
+  "alternateName": "JC",
+  "url": "https://josefranciscocruzcorro.github.io/",
+  "image": "https://josefranciscocruzcorro.github.io/assets/img/emblema.png",
+  "jobTitle": "Arquitecto de software · Backend & DevOps · IA aplicada",
+  "birthDate": "1994-05-17",
+  "nationality": "Ecuatoriana",
+  "telephone": "+593995391318",
+  "knowsLanguage": ["es", "en", "zh"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Quito", "addressCountry": "EC" },
+  "worksFor": { "@type": "Organization", "name": "CRONLEADS S.A.S.", "url": "https://software-total.com" },
+  "knowsAbout": ["Python","Django","FastAPI","PHP","Symfony","Java","React","Kubernetes","Docker","PostgreSQL","Apache Kafka","Inteligencia artificial","IoT","ESP32","Ciberseguridad","Pentesting","DevOps"],
+  "sameAs": [
+    "https://software-total.com",
+    "https://www.facebook.com/profile.php?id=61574821014389",
+    "https://www.instagram.com/software2025total",
+    "https://x.com/software2025t",
+    "https://www.youtube.com/@SoftwareTotal2025"
+  ]
+}
+</script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <!-- Hero -->
-    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://picsum.photos/1200/800?random=1')">
-      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-      <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center px-4">
-        <img src="https://minio.gesco.ec/software-total/images/logo-redondo.png" alt="Logo Software Total" class="w-32 h-32 mb-4 animate-pulse">
-        <h1 class="text-5xl font-bold text-white mb-4">Jose Francisco Cruz Corro</h1>
-        <p class="text-xl text-gray-200 mb-6">Desarrollador de Software | DevOps | Servidores | IA & Big Data</p>
-        <p class="text-md text-gray-300 italic mb-8">Autodidacta • Emprendedor • Apasionado de la Tecnología</p>
-        <div class="flex space-x-4">
-          <a href="https://wa.me/593995391318" class="text-white text-2xl hover:text-green-400 transition"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://t.me/SoftwareTotal" class="text-white text-2xl hover:text-blue-400 transition"><i class="fab fa-telegram"></i></a>
-          <a href="mailto:info@software-total.com" class="text-white text-2xl hover:text-red-400 transition"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.software-total.com" class="text-white text-2xl hover:text-yellow-400 transition"><i class="fas fa-globe"></i></a>
+
+<body>
+<a class="saltar" href="#raiz">Saltar al contenido</a>
+
+<canvas id="bosque" aria-hidden="true"></canvas>
+<div class="atmosfera" aria-hidden="true"></div>
+<div class="grano" aria-hidden="true"></div>
+<div class="linterna" id="linterna" aria-hidden="true"></div>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="g-raiz" viewBox="0 0 24 24"><path d="M12 2v9m0 0c0 3-3 4-4.5 6.5C6.3 19.5 6 21 6 22m6-11c0 3 3 4 4.5 6.5C17.7 19.5 18 21 18 22m-6-6c-1.6 1-3.4 1.4-4.8 3.6M12 16c1.6 1 3.4 1.4 4.8 3.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="g-anillos" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="5.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".8"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1" opacity=".55"/></symbol>
+  <symbol id="g-dosel" viewBox="0 0 24 24"><path d="M12 21c0-6 1-10 8-14-.5 8-3.5 12-8 14Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M12 21C12 15 11 11 4 7c.5 8 3.5 12 8 14Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" opacity=".6"/></symbol>
+  <symbol id="g-obras" viewBox="0 0 24 24"><path d="M12 3c3.3 0 6 2.5 6 5.8 0 4.4-6 12.2-6 12.2S6 13.2 6 8.8C6 5.5 8.7 3 12 3Z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+  <symbol id="g-claro" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
+  <symbol id="g-pacto" viewBox="0 0 24 24"><path d="M7 11.5 4 8.5C2.5 7 4 4.2 6 5.2L12 8l6-2.8c2-1 3.5 1.8 2 3.3l-3 3M7 11.5l3.5 3.5M7 11.5l-2 2.2c-1.3 1.5.6 3.8 2.2 2.7M10.5 15l2.6 2.6c1.4 1.4 3.6-.7 2.3-2.3L13 12.7" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="g-senal" viewBox="0 0 24 24"><path d="M12 21c-2.5-3-4-5-4-7.5A4 4 0 0 1 16 13c0 2.5-1.5 4.5-4 8Z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 6.5C7.8 4.4 9.8 3 12 3s4.2 1.4 5.5 3.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".6"/></symbol>
+  <symbol id="g-wsp" viewBox="0 0 24 24"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.86.5 3.6 1.37 5.1L2 22l5.2-1.52a9.78 9.78 0 0 0 4.84 1.27h.01c5.43 0 9.84-4.4 9.84-9.84C21.9 6.4 17.48 2 12.04 2Zm5.76 13.9c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.07-1.82-.11a16.6 16.6 0 0 1-1.65-.61c-2.9-1.25-4.8-4.17-4.95-4.37-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36l.56.01c.18.01.42-.7.66.5.24.58.82 2 .89 2.14.07.15.12.32.02.51-.1.2-.15.32-.29.49l-.44.51c-.15.14-.3.3-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.3 2.35 1.45.29.15.46.12.63-.7.17-.2.72-.85.91-1.14.2-.29.39-.24.66-.14.27.1 1.7.8 1.99.95.29.14.48.22.55.34.07.12.07.7-.17 1.38Z" fill="currentColor"/></symbol>
+  <symbol id="g-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m3 7 8.2 5.6a1.5 1.5 0 0 0 1.6 0L21 7" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="g-web" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9S14.5 21.4 12 21c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+  <symbol id="g-tg" viewBox="0 0 24 24"><path d="M21.7 4.3 2.9 11.5c-.9.35-.87 1.63.04 1.94l4.7 1.6 1.8 5.4c.25.75 1.2.95 1.73.37l2.6-2.85 4.7 3.45c.66.48 1.6.12 1.77-.68l3.1-14.6c.2-.9-.7-1.65-1.54-1.33ZM9.3 14.3l8.7-5.9-7.1 6.7-.3 3.4-1.3-4.2Z" fill="currentColor"/></symbol>
+  <symbol id="g-flecha" viewBox="0 0 24 24"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="g-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 11 13M18 14v5a1.6 1.6 0 0 1-1.6 1.6H5.6A1.6 1.6 0 0 1 4 19V8.2A1.6 1.6 0 0 1 5.6 6.6H10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ═══════════════ EL UMBRAL ═══════════════ -->
+<section class="portal" id="portal">
+  <div class="portal__in">
+
+    <div class="emblema" id="emblema" title="Toca el sello">
+      <svg class="emblema__runas" viewBox="0 0 400 400" aria-hidden="true">
+        <circle class="anillo anillo--1" cx="200" cy="200" r="186" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 10"/>
+        <circle class="anillo anillo--2" cx="200" cy="200" r="174" fill="none" stroke="currentColor" stroke-width=".7" stroke-dasharray="26 14 4 14"/>
+        <circle class="anillo anillo--3" cx="200" cy="200" r="196" fill="none" stroke="currentColor" stroke-width=".6" stroke-dasharray="1 16"/>
+      </svg>
+      <img src="assets/img/emblema.png" width="560" height="560" alt="Sello personal de Jose Francisco Cruz Corro: un ouróboros que rodea una estrella de cinco puntas con el monograma JC" fetchpriority="high">
+    </div>
+
+    <p class="portal__sobre">Bienvenido al bosque</p>
+    <h1 class="portal__nombre"><span>Jose Francisco</span><span>Cruz Corro</span></h1>
+    <p class="portal__rol">Arquitecto de software · Backend &amp; DevOps · IA aplicada · IoT · Ciberseguridad</p>
+
+    <p class="susurro" aria-live="polite"><span class="susurro__txt" id="susurro"></span><span class="susurro__cursor" aria-hidden="true"></span></p>
+
+    <div class="portal__acciones">
+      <a class="btn btn--savia" href="#raiz" data-scroll>Adéntrate<svg aria-hidden="true"><use href="#g-flecha"/></svg></a>
+      <a class="btn" href="https://wa.me/593995391318?text=Hola%20Jose%2C%20vi%20tu%20sitio%20y%20quiero%20conversar%20un%20proyecto" target="_blank" rel="noopener">Hablemos<svg aria-hidden="true"><use href="#g-wsp"/></svg></a>
+    </div>
+
+    <p class="portal__pista">
+      <kbd>/</kbd> invoca el sendero · <kbd>S</kbd> sonidos del bosque · <kbd>L</kbd> linterna
+    </p>
+  </div>
+
+  <div class="portal__desc" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ═══════════════ MUNDO ═══════════════ -->
+<div class="mundo">
+
+  <aside class="rail">
+    <div class="rail__in">
+      <a class="rail__sello" href="#portal" data-scroll aria-label="Volver al umbral">
+        <img src="assets/img/emblema-192.png" width="192" height="192" alt="">
+      </a>
+      <p class="rail__nombre">Jose Francisco<br>Cruz Corro</p>
+      <p class="rail__rol">Construyo sistemas completos:<br>de la raíz al dosel.</p>
+
+      <nav class="sendero" aria-label="Secciones">
+        <span class="sendero__tallo" aria-hidden="true"><i id="savia"></i></span>
+        <a href="#raiz"    data-scroll><svg aria-hidden="true"><use href="#g-raiz"/></svg><span>La raíz</span><em>origen</em></a>
+        <a href="#anillos" data-scroll><svg aria-hidden="true"><use href="#g-anillos"/></svg><span>Los anillos</span><em>trayectoria</em></a>
+        <a href="#dosel"   data-scroll><svg aria-hidden="true"><use href="#g-dosel"/></svg><span>El dosel</span><em>arsenal</em></a>
+        <a href="#obras"   data-scroll><svg aria-hidden="true"><use href="#g-obras"/></svg><span>Los frutos</span><em>obras</em></a>
+        <a href="#claro"   data-scroll><svg aria-hidden="true"><use href="#g-claro"/></svg><span>El claro</span><em>lo que construyo</em></a>
+        <a href="#pacto"   data-scroll><svg aria-hidden="true"><use href="#g-pacto"/></svg><span>El pacto</span><em>cómo trabajo</em></a>
+        <a href="#senal"   data-scroll><svg aria-hidden="true"><use href="#g-senal"/></svg><span>La señal</span><em>contacto</em></a>
+      </nav>
+
+      <div class="rail__pie">
+        <p class="rail__reloj"><span class="punto" aria-hidden="true"></span> Quito <time id="reloj">—:—</time></p>
+        <div class="rail__redes">
+          <a href="https://wa.me/593995391318" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#g-wsp"/></svg></a>
+          <a href="mailto:info@software-total.com" aria-label="Correo"><svg aria-hidden="true"><use href="#g-mail"/></svg></a>
+          <a href="https://t.me/SoftwareTotal" target="_blank" rel="noopener" aria-label="Telegram"><svg aria-hidden="true"><use href="#g-tg"/></svg></a>
+          <a href="https://software-total.com" target="_blank" rel="noopener" aria-label="Software Total"><svg aria-hidden="true"><use href="#g-web"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="contenido" id="contenido">
+
+    <!-- ── LA RAÍZ ── -->
+    <section id="raiz" class="claro">
+      <header class="claro__cab revelar">
+        <span class="claro__num">I</span>
+        <h2>La raíz</h2>
+        <p class="claro__sub">De dónde viene todo lo que crece.</p>
+      </header>
+
+      <div class="prosa revelar">
+        <p><strong>Nací en Quito el 17 de mayo de 1994</strong> y desde 2012 vivo de escribir software. No hay un cartón colgado en mi pared: hay sistemas corriendo en producción, servidores que levanté desde el RAID y empresas que facturan sobre código que escribí yo.</p>
+        <p>Entré a <em>Matemática Pura</em> en la Politécnica Nacional y a <em>Sistemas</em> en la ESPE. Dejé las dos: el aula avanzaba más lento que mi curiosidad y afuera había trabajo que pagaba. Lo más cerca que estuve de un título fue una <em>tecnología en ciberseguridad</em>, casi terminada. Aprendí como aprenden los árboles: hacia abajo primero, sin público, hasta sostener algo grande.</p>
+        <p>Trabajo el <strong>stack completo</strong>: el microcontrolador que lee un sensor, el servidor TCP que recibe la trama, la base de datos que la guarda, la API que la sirve, la interfaz que la muestra, el clúster donde todo vive y el modelo de IA que la interpreta. Pocas veces necesito llamar a alguien más.</p>
+      </div>
+
+      <ul class="cifras revelar">
+        <li><b data-contador="14" id="anios-exp">14</b><span>años construyendo</span></li>
+        <li><b data-contador="4">4</b><span>plataformas propias en línea</span></li>
+        <li><b data-contador="30">30</b><span>tecnologías en producción</span></li>
+        <li><b>50<i>%</i></b><span>socio de CRONLEADS S.A.S.</span></li>
+      </ul>
+
+      <div class="dos-col">
+        <div class="tarjeta revelar">
+          <h3 class="tarjeta__tit">Lenguas</h3>
+          <ul class="lenguas">
+            <li><span>Español</span><i class="barra" style="--n:1"><b></b></i><em>Nativo</em></li>
+            <li><span>Inglés</span><i class="barra" style="--n:.38"><b></b></i><em>A2 · técnico</em></li>
+            <li><span>中文 · Chino</span><i class="barra" style="--n:.18"><b></b></i><em>Principiante</em></li>
+          </ul>
+        </div>
+        <div class="tarjeta revelar">
+          <h3 class="tarjeta__tit">Señas</h3>
+          <dl class="senas">
+            <dt>Base</dt><dd>Quito, Ecuador · remoto para el mundo</dd>
+            <dt>Modo</dt><dd>Autodidacta, desde 2012</dd>
+            <dt>Ahora</dt><dd>Freelance + CRONLEADS S.A.S.</dd>
+            <dt>Terreno</dt><dd>Backend, infraestructura, IA, hardware</dd>
+          </dl>
         </div>
       </div>
     </section>
 
-  <!-- Sobre Mi -->
-  <section id="about" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-8">Sobre Mí</h2>
-      <div class="max-w-3xl mx-auto text-lg text-gray-700 space-y-4">
-        <p>Soy desarrollador de software nacido en 1994 en Quito, Ecuador, con más de 10 años de experiencia, especializado en arquitecturas robustas, automatización de procesos y soluciones de inteligencia artificial y big data.</p>
-        <p>He implementado infraestructuras DevOps en la nube, gestionado servidores de misión crítica y optimizado pipelines CI/CD para acelerar la entrega de software.</p>
-        <p>Mi enfoque autodidacta y emprendedor me impulsa a aprender continuamente nuevas tecnologías y aplicar prácticas innovadoras para resolver retos complejos.</p>
-      </div>
-    </div>
-  </section>
+    <!-- ── LOS ANILLOS ── -->
+    <section id="anillos" class="claro">
+      <header class="claro__cab revelar">
+        <span class="claro__num">II</span>
+        <h2>Los anillos</h2>
+        <p class="claro__sub">Un año, un anillo. Así se lee un tronco — y una carrera.</p>
+      </header>
 
-  <!-- Servicios -->
-  <section id="services" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">Servicios</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Tarjetas de servicios -->
-        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-          <div class="text-5xl text-indigo-500 mb-4 text-center"><i class="fas fa-code"></i></div>
-          <h3 class="text-2xl font-semibold mb-2 text-center">Desarrollo de Software</h3>
-          <p class="text-gray-600 text-center">Aplicaciones web y móviles a medida usando Angular, React, Django, Flask y más.</p>
+      <ol class="tronco">
+        <li class="anillo-i revelar" data-tipo="propio">
+          <span class="anillo-i__nodo" aria-hidden="true"></span>
+          <p class="anillo-i__t">2012 — hoy</p>
+          <h3>Freelance <small>independiente</small></h3>
+          <p class="anillo-i__d">La constante de toda mi vida profesional. Sistemas de gestión, contabilidad, IoT, integraciones y servidores para clientes propios. Incluso con empleo fijo, nunca dejé de construir por fuera.</p>
+          <ul class="tags"><li>Arquitectura</li><li>Full-stack</li><li>Infraestructura</li><li>Consultoría</li></ul>
+        </li>
+
+        <li class="anillo-i revelar" data-tipo="socio">
+          <span class="anillo-i__nodo" aria-hidden="true"></span>
+          <p class="anillo-i__t">Actualidad</p>
+          <h3>CRONLEADS S.A.S. <small>socio · 50%</small></h3>
+          <p class="anillo-i__d">Empresa de software en la que participo al 50% de utilidades, operando bajo la marca <a href="https://software-total.com" target="_blank" rel="noopener">software-total.com</a>. Dirección técnica, arquitectura y desarrollo de los productos.</p>
+          <ul class="tags"><li>Producto</li><li>Dirección técnica</li><li>Cloud</li></ul>
+        </li>
+
+        <li class="anillo-i revelar" data-tipo="fijo">
+          <span class="anillo-i__nodo" aria-hidden="true"></span>
+          <p class="anillo-i__t">dic 2023 — dic 2025</p>
+          <h3>Fibramax <small>Backend Developer</small></h3>
+          <p class="anillo-i__d">Desarrollo backend y plataforma para un operador de telecomunicaciones: servicios en Python sobre contenedores, colas y procesamiento asíncrono, orquestación en Kubernetes y aplicaciones móviles.</p>
+          <ul class="tags"><li>Python</li><li>Django</li><li>FastAPI</li><li>Docker</li><li>Kubernetes</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li><li>RabbitMQ</li><li>React</li><li>Flutter</li></ul>
+        </li>
+
+        <li class="anillo-i revelar" data-tipo="fijo">
+          <span class="anillo-i__nodo" aria-hidden="true"></span>
+          <p class="anillo-i__t">may 2022 — may 2023</p>
+          <h3>Telconet <small>vía CONSULTI S.A.</small></h3>
+          <p class="anillo-i__d">Trabajo sobre <em>Telcos</em>, el ERP interno de Telconet: corrección de errores críticos, nuevos módulos y microservicios para una operación de escala nacional, con integración por eventos.</p>
+          <ul class="tags"><li>Java</li><li>Symfony</li><li>PHP</li><li>React</li><li>Apache Kafka</li><li>Oracle SQL</li><li>jQuery</li><li>Microservicios</li></ul>
+        </li>
+
+        <li class="anillo-i revelar" data-tipo="fijo">
+          <span class="anillo-i__nodo" aria-hidden="true"></span>
+          <p class="anillo-i__t">abr 2021 — abr 2022</p>
+          <h3>Globonet Soluciones <small>Desarrollador</small></h3>
+          <p class="anillo-i__d">Mejora y mantenimiento de <em>FACTUSIS</em>, su sistema contable y de facturación, además de otros proyectos web de la empresa.</p>
+          <ul class="tags"><li>PHP</li><li>CodeIgniter</li><li>MariaDB</li><li>Vue.js</li><li>jQuery</li><li>WordPress</li></ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ── EL DOSEL ── -->
+    <section id="dosel" class="claro">
+      <header class="claro__cab revelar">
+        <span class="claro__num">III</span>
+        <h2>El dosel</h2>
+        <p class="claro__sub">Lo que crece arriba, a plena luz: todo lo que he puesto en producción.</p>
+      </header>
+
+      <div class="filtros revelar" role="group" aria-label="Filtrar tecnologías">
+        <button class="chip is-on" data-filtro="todo">Todo</button>
+        <button class="chip" data-filtro="backend">Backend</button>
+        <button class="chip" data-filtro="frontend">Frontend</button>
+        <button class="chip" data-filtro="datos">Datos</button>
+        <button class="chip" data-filtro="infra">Infraestructura</button>
+        <button class="chip" data-filtro="ia">IA</button>
+        <button class="chip" data-filtro="hardware">Hardware &amp; IoT</button>
+        <button class="chip" data-filtro="seguridad">Seguridad</button>
+      </div>
+
+      <div class="hojas" id="hojas">
+        <div class="hoja revelar" data-cat="backend">
+          <h3>Lenguajes</h3>
+          <ul><li>Python</li><li>PHP</li><li>Java</li><li>JavaScript</li><li>C#</li><li>Kotlin</li><li>Dart</li><li>C/C++</li><li>SQL</li></ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-          <div class="text-5xl text-green-500 mb-4 text-center"><i class="fas fa-cogs"></i></div>
-          <h3 class="text-2xl font-semibold mb-2 text-center">DevOps & CI/CD</h3>
-          <p class="text-gray-600 text-center">Automatización de pipelines, integración continua y despliegue continuo en Kubernetes y Docker.</p>
+        <div class="hoja revelar" data-cat="backend">
+          <h3>Backend &amp; frameworks</h3>
+          <ul><li>Django</li><li>FastAPI</li><li>Symfony</li><li>CodeIgniter</li><li>.NET</li><li>APIs REST</li><li>Microservicios</li><li>WebSockets</li></ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-          <div class="text-5xl text-blue-500 mb-4 text-center"><i class="fas fa-server"></i></div>
-          <h3 class="text-2xl font-semibold mb-2 text-center">Gestión de Servidores</h3>
-          <p class="text-gray-600 text-center">Administración de servidores Linux/Windows, configuración de redes y seguridad empresarial.</p>
+        <div class="hoja revelar" data-cat="frontend">
+          <h3>Frontend &amp; móvil</h3>
+          <ul><li>React</li><li>Vue.js</li><li>jQuery</li><li>Flutter</li><li>HTML/CSS</li><li>Tailwind</li></ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-          <div class="text-5xl text-yellow-500 mb-4 text-center"><i class="fas fa-robot"></i></div>
-          <h3 class="text-2xl font-semibold mb-2 text-center">Inteligencia Artificial</h3>
-          <p class="text-gray-600 text-center">Implementación de modelos de machine learning y deep learning para análisis de datos y automatización.</p>
+        <div class="hoja revelar" data-cat="datos">
+          <h3>Datos</h3>
+          <ul><li>PostgreSQL</li><li>MariaDB / MySQL</li><li>Oracle SQL</li><li>SQL Server</li><li>Redis</li><li>Modelado</li><li>Optimización de consultas</li></ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-          <div class="text-5xl text-purple-500 mb-4 text-center"><i class="fas fa-database"></i></div>
-          <h3 class="text-2xl font-semibold mb-2 text-center">Big Data</h3>
-          <p class="text-gray-600 text-center">Procesamiento y análisis de grandes volúmenes de datos con Spark, Hadoop y Python.</p>
+        <div class="hoja revelar" data-cat="datos">
+          <h3>Eventos &amp; colas</h3>
+          <ul><li>Apache Kafka</li><li>RabbitMQ</li><li>Celery</li><li>Tareas programadas</li><li>Procesamiento asíncrono</li></ul>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
-          <div class="text-5xl text-red-500 mb-4 text-center"><i class="fas fa-cloud"></i></div>
-          <h3 class="text-2xl font-semibold mb-2 text-center">Cloud & Infraestructura</h3>
-          <p class="text-gray-600 text-center">Despliegue en AWS, GCP y Azure, diseño de arquitecturas escalables y seguras.</p>
+        <div class="hoja revelar" data-cat="infra">
+          <h3>Infraestructura &amp; DevOps</h3>
+          <ul><li>Docker</li><li>Kubernetes</li><li>Linux</li><li>CI/CD</li><li>Nginx / Apache</li><li>RAID y bare metal</li><li>Servidores de correo</li><li>Zimbra</li><li>GitLab autoalojado</li><li>VoIP</li><li>Servidores TCP</li></ul>
+        </div>
+        <div class="hoja revelar" data-cat="ia">
+          <h3>Inteligencia artificial</h3>
+          <ul><li>Visión por computador</li><li>Reconocimiento de imágenes</li><li>IA integrada en plataformas</li><li>Agentes que ejecutan funciones</li><li>Chatbots con IA</li><li>Análisis de mercados (Binance)</li></ul>
+        </div>
+        <div class="hoja revelar" data-cat="hardware">
+          <h3>Hardware &amp; IoT</h3>
+          <ul><li>ESP32</li><li>Arduino</li><li>PlatformIO</li><li>Sensórica</li><li>GPS Teltonika</li><li>Servomotores</li><li>Telemetría</li><li>Cámaras con IA</li></ul>
+        </div>
+        <div class="hoja revelar" data-cat="backend">
+          <h3>Integraciones</h3>
+          <ul><li>Meta Business API</li><li>Chat en vivo</li><li>Botones de pago</li><li>Facturación electrónica</li><li>Firmadores electrónicos</li><li>Pasarelas y webhooks</li></ul>
+        </div>
+        <div class="hoja revelar" data-cat="seguridad">
+          <h3>Seguridad</h3>
+          <ul><li>Ciberseguridad</li><li>Pentesting</li><li>Hardening de servidores</li><li>Gestión de accesos</li><li>Auditoría de sistemas</li></ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Clientes Destacados -->
-  <section id="clients" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">Clientes Destacados</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="relative smoke-container">
-          <canvas class="smoke-canvas absolute inset-0"></canvas>
-          <img src="https://mayasoft.ec/img/default/logo.jpg" alt="Globonet Soluciones" class="mx-auto h-24 object-contain" onload="this.previousElementSibling.style.display='none'">
+    <!-- ── LOS FRUTOS ── -->
+    <section id="obras" class="claro">
+      <header class="claro__cab revelar">
+        <span class="claro__num">IV</span>
+        <h2>Los frutos</h2>
+        <p class="claro__sub">Sistemas vivos. Los cuatro primeros los construí de extremo a extremo, yo solo.</p>
+      </header>
+
+      <div class="frutos">
+        <a class="fruto revelar" href="https://gesco.ec" target="_blank" rel="noopener" data-tilt>
+          <span class="fruto__marca">01</span>
+          <h3>GESCO <svg aria-hidden="true"><use href="#g-ext"/></svg></h3>
+          <p>Plataforma de gestión empresarial construida íntegramente por mí: modelo de datos, backend, interfaz, infraestructura y despliegue.</p>
+          <ul class="tags"><li>Full-stack</li><li>Arquitectura</li><li>Infra propia</li></ul>
+        </a>
+
+        <a class="fruto revelar" href="https://citacar.com" target="_blank" rel="noopener" data-tilt>
+          <span class="fruto__marca">02</span>
+          <h3>Citacar <svg aria-hidden="true"><use href="#g-ext"/></svg></h3>
+          <p>Producto web completo diseñado y desarrollado de cero: arquitectura, backend, frontend y operación en servidor propio.</p>
+          <ul class="tags"><li>Full-stack</li><li>Producto</li><li>DevOps</li></ul>
+        </a>
+
+        <a class="fruto revelar" href="https://ultimasync.com" target="_blank" rel="noopener" data-tilt>
+          <span class="fruto__marca">03</span>
+          <h3>Ultimasync <svg aria-hidden="true"><use href="#g-ext"/></svg></h3>
+          <p>Plataforma de sincronización e integración de datos entre sistemas. Diseño, desarrollo y puesta en producción propios.</p>
+          <ul class="tags"><li>Integraciones</li><li>APIs</li><li>Automatización</li></ul>
+        </a>
+
+        <a class="fruto revelar" href="https://naroevents.com" target="_blank" rel="noopener" data-tilt>
+          <span class="fruto__marca">04</span>
+          <h3>Naro Events <svg aria-hidden="true"><use href="#g-ext"/></svg></h3>
+          <p>Plataforma para la gestión de eventos, construida completa por mí desde el modelo de datos hasta la interfaz pública.</p>
+          <ul class="tags"><li>Full-stack</li><li>Producto</li></ul>
+        </a>
+
+        <a class="fruto revelar" href="https://software-total.com" target="_blank" rel="noopener" data-tilt>
+          <span class="fruto__marca">05</span>
+          <h3>Software Total <svg aria-hidden="true"><use href="#g-ext"/></svg></h3>
+          <p>La casa: la marca de <strong>CRONLEADS S.A.S.</strong>, donde soy socio al 50%. Desde ahí construimos software a medida para empresas.</p>
+          <ul class="tags"><li>CRONLEADS S.A.S.</li><li>Socio 50%</li><li>Dirección técnica</li></ul>
+        </a>
+
+        <div class="fruto fruto--cerrado revelar" data-tilt>
+          <span class="fruto__marca">06</span>
+          <h3>Telemetría logística <em class="sello">privado</em></h3>
+          <p>Servidor TCP propio para flotas con dispositivos <strong>GPS Teltonika</strong>: decodificación del protocolo, ingesta continua, geocercas y panel de operación para empresas de logística.</p>
+          <ul class="tags"><li>Servidor TCP</li><li>Teltonika</li><li>Tiempo real</li></ul>
         </div>
-        <div class="relative smoke-container">
-          <canvas class="smoke-canvas absolute inset-0"></canvas>
-          <img src="https://www.telconet.net/images/tn/logo-telconetlatam.png" alt="Telconet Latam" class="mx-auto h-24 object-contain" onload="this.previousElementSibling.style.display='none'">
+
+        <div class="fruto fruto--cerrado revelar" data-tilt>
+          <span class="fruto__marca">07</span>
+          <h3>Guardia virtual <em class="sello">privado</em></h3>
+          <p>Vigilancia con visión por computador: cámaras con IA, alarmas y sensores sobre <strong>ESP32</strong> coordinados desde una central propia.</p>
+          <ul class="tags"><li>IA / visión</li><li>ESP32</li><li>Alarmas</li></ul>
         </div>
-        <div class="relative smoke-container">
-          <canvas class="smoke-canvas absolute inset-0"></canvas>
-          <img src="https://fibramax.ec/wp-content/uploads/2021/01/LOGORGB.png" alt="Fibramax" class="mx-auto h-24 object-contain" onload="this.previousElementSibling.style.display='none'">
+
+        <div class="fruto fruto--cerrado revelar" data-tilt>
+          <span class="fruto__marca">08</span>
+          <h3>Prótesis con servos <em class="sello">taller</em></h3>
+          <p>Proyecto propio de electrónica aplicada: prótesis accionadas por servomotores, control de movimiento y firmware a medida.</p>
+          <ul class="tags"><li>Firmware</li><li>Servos</li><li>Prototipado</li></ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Contacto -->
-  <section id="contact" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-8">Contacto</h2>
-      <p class="text-lg text-gray-700 mb-6">Estoy disponible para nuevos proyectos y colaboraciones. ¡Hablemos!</p>
-      <div class="flex justify-center space-x-6 mb-8">
-        <a href="https://wa.me/593995391318" class="text-green-500 text-3xl hover:text-green-600 transition"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:info@software-total.com" class="text-red-500 text-3xl hover:text-red-600 transition"><i class="fas fa-envelope"></i></a>
-        <a href="https://t.me/SoftwareTotal" class="text-blue-400 text-3xl hover:text-blue-500 transition"><i class="fab fa-telegram"></i></a>
+      <p class="nota revelar">Y, detrás de escena, varios sistemas internos, contables y de logística que no llevan mi nombre en la puerta.</p>
+    </section>
+
+    <!-- ── EL CLARO ── -->
+    <section id="claro" class="claro">
+      <header class="claro__cab revelar">
+        <span class="claro__num">V</span>
+        <h2>El claro</h2>
+        <p class="claro__sub">Donde entra la luz: lo que puedo construir para ti.</p>
+      </header>
+
+      <div class="saberes">
+        <article class="saber revelar">
+          <h3>Sistemas de gestión a medida</h3>
+          <p>ERP, contabilidad, facturación electrónica, inventarios y operación interna. Con firmadores electrónicos y cumplimiento tributario.</p>
+        </article>
+        <article class="saber revelar">
+          <h3>Arquitectura backend</h3>
+          <p>APIs, microservicios, colas, procesamiento asíncrono y bases de datos que aguantan crecimiento sin reescribirse cada año.</p>
+        </article>
+        <article class="saber revelar">
+          <h3>Infraestructura completa</h3>
+          <p>Desde el RAID del servidor hasta Kubernetes: correo, GitLab autoalojado, VoIP, respaldo, monitoreo y despliegue continuo.</p>
+        </article>
+        <article class="saber revelar">
+          <h3>IA aplicada, no decorativa</h3>
+          <p>Visión por computador, reconocimiento de imágenes, agentes que ejecutan funciones reales dentro de tu plataforma y asistentes de atención.</p>
+        </article>
+        <article class="saber revelar">
+          <h3>IoT y telemetría</h3>
+          <p>ESP32, sensores, GPS Teltonika, servidores TCP y paneles en tiempo real. El puente entre el fierro y la nube.</p>
+        </article>
+        <article class="saber revelar">
+          <h3>Seguridad ofensiva y defensiva</h3>
+          <p>Pentesting, hardening, revisión de accesos y cierre de agujeros antes de que alguien más los encuentre.</p>
+        </article>
       </div>
-      <p class="text-gray-600">Email: <a href="mailto:info@software-total.com" class="text-indigo-600 hover:underline">info@software-total.com</a></p>
-      <p class="text-gray-600">Web: <a href="https://www.software-total.com" class="text-indigo-600 hover:underline">www.software-total.com</a></p>
-      <p class="text-gray-600">Ubicación: Quito, Ecuador</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="py-6 bg-gray-800 text-gray-300">
-    <div class="container mx-auto px-4 text-center">
-      <div class="flex justify-center space-x-4 mb-4">
-        <a href="https://www.facebook.com/profile.php?id=61574821014389" class="hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/software2025total?igsh=MWoxN2hseDVhaHQ3bw==" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/software2025t" class="hover:text-white transition"><i class="fab fa-twitter"></i></a>
-        <a href="https://tiktok.com/@softwaretotal2025" class="hover:text-white transition"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.youtube.com/@SoftwareTotal2025" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+    <!-- ── EL PACTO ── -->
+    <section id="pacto" class="claro">
+      <header class="claro__cab revelar">
+        <span class="claro__num">VI</span>
+        <h2>El pacto</h2>
+        <p class="claro__sub">Todo bosque tiene sus reglas. Estas son las mías, dichas de frente.</p>
+      </header>
+
+      <div class="prosa revelar">
+        <p>Trabajo por resultados y cobro por valor. Prefiero proyectos <strong>freelance o cerrados</strong>, donde respondo por la obra completa y no por las horas que estuve sentado.</p>
       </div>
-      <p>&copy; 2025 Jose Francisco Cruz Corro. Todos los derechos reservados.</p>
-    </div>
-  </footer>
 
-  <!-- Smoke Animation Script -->
-  <script>
-    function createSmoke(canvas) {
-      const ctx = canvas.getContext('2d');
-      let particles = [];
-      function init() {
-        canvas.width = canvas.parentElement.offsetWidth;
-        canvas.height = canvas.parentElement.offsetHeight;
-        for (let i = 0; i < 40; i++) {
-          particles.push({
-            x: Math.random() * canvas.width,
-            y: canvas.height,
-            r: 20 + Math.random() * 30,
-            a: 0.05 + Math.random() * 0.1,
-            ySpeed: 0.5 + Math.random()
-          });
-        }
-      }
-      function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-          const grd = ctx.createRadialGradient(p.x, p.y, p.r * 0.1, p.x, p.y, p.r);
-          grd.addColorStop(0, `rgba(200,200,200,${p.a})`);
-          grd.addColorStop(1, 'rgba(200,200,200,0)');
-          ctx.fillStyle = grd;
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI);
-          ctx.fill();
-          p.y -= p.ySpeed;
-          p.a -= 0.001;
-          if (p.a <= 0) {
-            p.x = Math.random() * canvas.width;
-            p.y = canvas.height;
-            p.r = 20 + Math.random() * 30;
-            p.a = 0.05 + Math.random() * 0.1;
-            p.ySpeed = 0.5 + Math.random();
-          }
-        });
-        requestAnimationFrame(animate);
-      }
-      init();
-      animate();
-    }
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.smoke-canvas').forEach(c => createSmoke(c));
-    });
-  </script>
+      <ul class="pactos">
+        <li class="revelar"><h3>Tarifa acorde</h3><p>Si la propuesta es un empleo, tiene que compensar lo que dejo de facturar por fuera. Lo digo desde el primer correo para no hacerle perder el tiempo a nadie.</p></li>
+        <li class="revelar"><h3>Fuera de horario soy mío</h3><p>Tengo negocios propios en marcha. Fuera del horario acordado, mi tiempo es mío: eso no se negocia, se respeta.</p></li>
+        <li class="revelar"><h3>Remoto desde Quito</h3><p>Trabajo en remoto para cualquier zona horaria. Presencial en Quito, si el proyecto de verdad lo exige.</p></li>
+        <li class="revelar"><h3>De extremo a extremo</h3><p>Puedo entrar como único responsable técnico: arquitectura, código, servidor y despliegue. Sin cadena de intermediarios.</p></li>
+        <li class="revelar"><h3>Sin humo</h3><p>Si algo no se puede o no conviene, lo digo. Prefiero perder un proyecto a entregar una promesa que no se sostiene.</p></li>
+        <li class="revelar"><h3>Aprendizaje incluido</h3><p>Llevo <span data-anios>14</span> años aprendiendo tecnologías nuevas por deporte. Si tu problema necesita algo que aún no toqué, lo toco.</p></li>
+      </ul>
+    </section>
+
+    <!-- ── LA SEÑAL ── -->
+    <section id="senal" class="claro claro--final">
+      <header class="claro__cab revelar">
+        <span class="claro__num">VII</span>
+        <h2>La señal</h2>
+        <p class="claro__sub">Enciende el fuego y dime qué quieres construir.</p>
+      </header>
+
+      <div class="prosa revelar">
+        <p>Respondo rápido por WhatsApp. Cuéntame el problema — no hace falta que traigas la solución, para eso estoy yo.</p>
+      </div>
+
+      <div class="contactos">
+        <a class="contacto revelar" href="https://wa.me/593995391318?text=Hola%20Jose%2C%20vi%20tu%20sitio%20y%20quiero%20conversar%20un%20proyecto" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#g-wsp"/></svg>
+          <b>WhatsApp</b><span>+593 99 539 1318</span>
+        </a>
+        <a class="contacto revelar" href="mailto:info@software-total.com?subject=Proyecto%20para%20Jose%20Francisco">
+          <svg aria-hidden="true"><use href="#g-mail"/></svg>
+          <b>Correo</b><span>info@software-total.com</span>
+        </a>
+        <a class="contacto revelar" href="https://software-total.com" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#g-web"/></svg>
+          <b>Software Total</b><span>CRONLEADS S.A.S.</span>
+        </a>
+        <a class="contacto revelar" href="https://t.me/SoftwareTotal" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#g-tg"/></svg>
+          <b>Telegram</b><span>@SoftwareTotal</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="pie">
+      <p class="pie__frase">«El bosque no compite con el bosque: crece.»</p>
+      <div class="pie__redes">
+        <a href="https://www.facebook.com/profile.php?id=61574821014389" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/software2025total" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/software2025t" target="_blank" rel="noopener">X</a>
+        <a href="https://tiktok.com/@softwaretotal2025" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/@SoftwareTotal2025" target="_blank" rel="noopener">YouTube</a>
+      </div>
+      <p class="pie__legal">
+        © <span id="anio">2026</span> Jose Francisco Cruz Corro · Quito, Ecuador<br>
+        Hecho a mano con HTML, CSS y un canvas. Sin frameworks, sin backend, sin rastreadores.
+        <button class="pie__semilla" id="semilla" aria-label="Semilla oculta">✦</button>
+      </p>
+    </footer>
+  </main>
+</div>
+
+<!-- ═══════════════ HUD ═══════════════ -->
+<div class="hud">
+  <button class="hud__b" id="btn-sonido" aria-pressed="false" title="Sonidos del bosque (S)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h3.5L13 19V5L7.5 9H4Z" fill="currentColor"/><path class="ico-ondas" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="ico-off" d="m17 9.5 4 5m0-5-4 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+    <span class="hud__t">Sonido</span>
+  </button>
+  <button class="hud__b" id="btn-linterna" aria-pressed="false" title="Modo linterna (L)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6v3l-1.5 2v3.5l2.2 10.2a1.2 1.2 0 0 1-1.2 1.3h-5a1.2 1.2 0 0 1-1.2-1.3L10.5 10.5V7L9 5V2Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+    <span class="hud__t">Linterna</span>
+  </button>
+  <button class="hud__b" id="btn-sendero" title="Invocar el sendero (/)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+    <span class="hud__t">Sendero</span>
+  </button>
+</div>
+
+<nav class="nav-movil" aria-label="Navegación rápida">
+  <a href="#raiz" data-scroll><svg aria-hidden="true"><use href="#g-raiz"/></svg><span>Raíz</span></a>
+  <a href="#anillos" data-scroll><svg aria-hidden="true"><use href="#g-anillos"/></svg><span>Anillos</span></a>
+  <a href="#dosel" data-scroll><svg aria-hidden="true"><use href="#g-dosel"/></svg><span>Dosel</span></a>
+  <a href="#obras" data-scroll><svg aria-hidden="true"><use href="#g-obras"/></svg><span>Obras</span></a>
+  <a href="#senal" data-scroll><svg aria-hidden="true"><use href="#g-senal"/></svg><span>Señal</span></a>
+</nav>
+
+<!-- ═══════════════ SENDERO (paleta) ═══════════════ -->
+<div class="sendero-modal" id="paleta" hidden>
+  <div class="sendero-modal__fondo" data-cerrar></div>
+  <div class="sendero-modal__caja" role="dialog" aria-modal="true" aria-label="Invocar el sendero">
+    <input type="text" id="paleta-in" placeholder="¿Hacia dónde caminamos?" autocomplete="off" spellcheck="false" aria-label="Buscar destino">
+    <ul id="paleta-lista" role="listbox"></ul>
+    <p class="sendero-modal__pie"><kbd>↑</kbd><kbd>↓</kbd> moverse · <kbd>↵</kbd> ir · <kbd>esc</kbd> salir</p>
+  </div>
+</div>
+
+<div class="brindis" id="brindis" role="status" aria-live="polite"></div>
+
+<script src="assets/js/bosque.js" defer></script>
+<script src="assets/js/app.js" defer></script>
 </body>
 </html>
